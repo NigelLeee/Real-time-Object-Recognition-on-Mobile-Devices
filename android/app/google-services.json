@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "965832673404",
+    "project_id": "fyprealtimeobjectrecognition",
+    "storage_bucket": "fyprealtimeobjectrecognition.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965832673404:android:674f3aa104d74484cc21f9",
+        "android_client_info": {
+          "package_name": "com.example.real_time_object_recognition_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965832673404-u0jttrd1apu91llhbktsum4u56vsdmq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcawfJHEl9kijCfgftV_CmNFsoVrh6TKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965832673404-u0jttrd1apu91llhbktsum4u56vsdmq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
