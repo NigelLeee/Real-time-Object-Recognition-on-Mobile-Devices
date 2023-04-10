@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -46,21 +49,12 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBlDUeiV_kTq45Yt0lPcl_Ttrblr393CpA',
-    appId: '1:965832673404:web:5447a7fce56a0a6ecc21f9',
-    messagingSenderId: '965832673404',
-    projectId: 'fyprealtimeobjectrecognition',
-    authDomain: 'fyprealtimeobjectrecognition.firebaseapp.com',
-    storageBucket: 'fyprealtimeobjectrecognition.appspot.com',
-    measurementId: 'G-188R3SRY9D',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBcawfJHEl9kijCfgftV_CmNFsoVrh6TKI',
     appId: '1:965832673404:android:674f3aa104d74484cc21f9',
     messagingSenderId: '965832673404',
     projectId: 'fyprealtimeobjectrecognition',
+    databaseURL: 'https://fyprealtimeobjectrecognition-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'fyprealtimeobjectrecognition.appspot.com',
   );
 
@@ -69,7 +63,9 @@ class DefaultFirebaseOptions {
     appId: '1:965832673404:ios:66f76baf863415e9cc21f9',
     messagingSenderId: '965832673404',
     projectId: 'fyprealtimeobjectrecognition',
+    databaseURL: 'https://fyprealtimeobjectrecognition-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'fyprealtimeobjectrecognition.appspot.com',
+    androidClientId: '965832673404-608sbn5an7bbtm4ue1np8aeies0vlrvo.apps.googleusercontent.com',
     iosClientId: '965832673404-thub62u66llghisivdu6l91k31agfu43.apps.googleusercontent.com',
     iosBundleId: 'com.example.realTimeObjectRecognitionApplication',
   );
